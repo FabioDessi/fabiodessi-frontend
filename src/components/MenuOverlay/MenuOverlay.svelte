@@ -7,6 +7,7 @@
 	import type { ScreenSize } from '../../utils/handleResize';
 
 	let screenSize: ScreenSize;
+	let isHidden = true;
 
 	onMount(() => {
 		const cleanup = handleResize((size) => {
@@ -15,14 +16,22 @@
 
 		return cleanup;
 	});
+
+	const hideMenuOverlay = () => {
+		isHidden = true;
+	};
 </script>
 
-<div class="flex flex-col justify-between w-full h-screen bg-violet-500">
+<div
+	class="flex flex-col justify-between w-full h-screen bg-violet-500 absolute"
+	class:hidden={isHidden}
+>
 	<div class="flex">
-		{#if screenSize === 'xs'}
+		<!-- {#if screenSize === 'xs'}
 			<Logo />
-		{/if}
+		{/if} -->
 		<div />
+		<div on:click={hideMenuOverlay}>X</div>
 	</div>
 
 	<div class="flex justify-between items-center">
