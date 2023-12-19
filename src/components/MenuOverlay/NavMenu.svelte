@@ -16,8 +16,8 @@
 	<a href="#" class="block text-4xl uppercase nav-item"
 		><span class="pl-8 pr-1 nav-item-title float-left shadow-sm">About</span></a
 	>
-	<a href="#" class="block text-4xl uppercase nav-item"
-		><span class="pl-8 pr-1 nav-item-title float-left shadow-sm">Resume</span></a
+	<a href="/work-experiences" class="block text-4xl uppercase nav-item"
+		><span class="pl-8 pr-1 nav-item-title float-left shadow-sm">Work Experiences</span></a
 	>
 	<a href="#" class="block text-4xl uppercase nav-item"
 		><span class="pl-8 pr-1 nav-item-title float-left shadow-sm">Portfolio</span></a
