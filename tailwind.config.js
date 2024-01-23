@@ -1,11 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
 			fontFamily: {
-				jost: ['Jost', 'ui-sans-serif', 'system-ui'],
-				anton: ['Anton', 'ui-sans-serif', 'system-ui']
+				integralCF: ['IntegralCF', 'ui-sans-serif', 'system-ui']
 			}
 		}
 	},

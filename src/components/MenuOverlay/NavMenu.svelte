@@ -12,7 +12,7 @@
 	});
 </script>
 
-<nav class="text-white space-y-4 font-anton nav-menu float-left">
+<nav class="text-white space-y-4 nav-menu float-left">
 	<a href="#" class="block text-4xl uppercase nav-item"
 		><span class="pl-8 pr-1 nav-item-title float-left shadow-sm">About</span></a
 	>
