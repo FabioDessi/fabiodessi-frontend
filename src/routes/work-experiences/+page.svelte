@@ -28,9 +28,9 @@
 
 <h4 class="section-title text-l uppercase font-bold pl-40">Work Experiences</h4>
 <div class="flex-col space-y-4 items-center py-8">
-	<h1 class="text-8xl uppercase font-anton">Empowering</h1>
-	<h1 class="text-8xl uppercase font-anton text-center">web experiences</h1>
-	<h1 class="text-8xl uppercase font-anton text-right">with code</h1>
+	<h1 class="text-8xl uppercase">Empowering</h1>
+	<h1 class="text-8xl uppercase text-center">web experiences</h1>
+	<h1 class="text-8xl uppercase text-right">with code</h1>
 </div>
 
 <h4 class="section-title text-l uppercase font-bold pl-40">Introduction</h4>
