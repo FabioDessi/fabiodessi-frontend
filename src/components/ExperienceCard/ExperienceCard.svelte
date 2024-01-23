@@ -28,7 +28,7 @@
 	class="flex-col items-center bg-grey-00 border-2 border-green-800 rounded shadow my-8 p-8 text-xl"
 >
 	<div class="mb-4">
-		<h3 class="mb-2 text-3xl font-anton">{`${role} @ ${company}`}</h3>
+		<h3 class="mb-2 text-3xl">{`${role} @ ${company}`}</h3>
 		<h4 class="mb-2 text-2xl">
 			{`${startDate} | ${endDate}`}
 		</h4>
