@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "vite dev",
+		"develop": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
@@ -35,6 +35,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@studio-freight/lenis": "^1.0.34",
 		"marked": "^9.1.5"
 	}
 }
