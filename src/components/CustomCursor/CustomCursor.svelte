@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
 
@@ -6,13 +6,13 @@
 	let isCursorVisible = false;
 	let remInPixels;
 	let isThrottled = false;
-	const throttleDuration = 2550;
+	const throttleDuration = 50;
 
 	onMount(() => {
 		remInPixels = parseFloat(getComputedStyle(document.documentElement).fontSize);
 		const cursorOffset = remInPixels / 2;
 
-		const updatePosition = (event) => {
+		const updatePosition = (event: MouseEvent) => {
 			if (isThrottled) return;
 			isThrottled = true;
 			setTimeout(() => {
@@ -45,7 +45,7 @@
 </script>
 
 {#if isCursorVisible}
-	<div class="custom-cursor" />
+	<div class="custom-cursor bg-red-700" />
 {/if}
 
 <style>
@@ -54,7 +54,6 @@
 		pointer-events: none;
 		width: 1rem;
 		height: 1rem;
-		background-color: #000;
 		border-radius: 50%;
 		z-index: 9999;
 	}
