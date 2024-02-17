@@ -5,7 +5,12 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				integralCF: ['IntegralCF', 'ui-sans-serif', 'system-ui']
+				integralCF: ['IntegralCF', 'ui-sans-serif', 'system-ui'],
+				guthenBoots: ['GuthenBoots', 'ui-sans-serif', 'system-ui'],
+				robotoSlab: ['RobotoSlab', 'ui-sans-serif', 'system-ui']
+			},
+			fontSize: {
+				'10xl': ['8.125rem', { lineHeight: '8.125rem' }]
 			}
 		}
 	},
