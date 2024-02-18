@@ -58,11 +58,11 @@ onMount(() => {
       <div class="basis-1/3">
         <h4 class="font-integralCF text-5xl tracking-wide mb-8">{title}</h4>
       </div>
+
       <div class="basis-2/3 pl-32">
         <p class="font-robotoSlab font-extralight text-2xl tracking-wide">{@html marked(content, { renderer: aboutIntroRenderer() })}</p>
       </div>
     </div>
-
     <div class="flex flex-row flex-wrap">
       {#each blocks as { title, content }, i (title)}
         {#if Math.floor(i/2) % 2 === 0}
@@ -102,7 +102,8 @@ onMount(() => {
         {/if}
       {/each}
     </div>
-</section>
+  </div>
+</section> 
 
 <style>
 .icon-placeholder {
