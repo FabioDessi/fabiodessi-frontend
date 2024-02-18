@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { WorkExperience } from '../../types';
 	import { marked } from 'marked';
-	import createTailwindMarkdownRenderer from '../../utils/markdownRenderer';
+	import { createTailwindMarkdownRenderer } from '../../utils/markdownRenderer';
 
 	export let workExperience: WorkExperience;
 
