@@ -15,7 +15,7 @@ interface Block {
   content: string;
 };
 
-export interface Section {
+export interface AboutSection {
   title: {
     firstLine: string;
     secondLine: string;
