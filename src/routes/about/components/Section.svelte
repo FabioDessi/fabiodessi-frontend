@@ -6,13 +6,13 @@ import Lenis from "@studio-freight/lenis";
 import { marked } from "marked";
 import { aboutIntroRenderer, aboutBlocksRenderer } from "../../../utils/markdownRenderer";
 
-import type { AboutSection } from "../../../types";
+import type { Section } from "../../../types";
 
 let parallaxSection: HTMLDivElement; 
 let parallaxTextFirst: HTMLDivElement;
 let parallaxTextsecond: HTMLDivElement;
 
-export let section: AboutSection;
+export let section: Section;
 const { title: { firstLine, secondLine }, intro: { title, content }, blocks } = section;
 
 onMount(() => {
