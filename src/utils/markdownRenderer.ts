@@ -9,13 +9,13 @@ const createTailwindMarkdownRenderer = () => {
   };
 
   renderer.paragraph = function (text) {
-    return `<p class="mb-4">${text}</p>`;
+    return `<p class="font-robotoSlab font-extralight text-2xl tracking-wide mb-4">${text}</p>`;
   };
 
   renderer.list = function (body, ordered, start) {
     const type = ordered ? 'ol' : 'ul';
     const startAttr = ordered && start !== 1 ? ` start="${start}"` : '';
-    return `<${type} class="list-disc list-inside my-4"${startAttr}>${body}</${type}>`;
+    return `<${type} class="list-disc list-inside marker:text-red-700 mb-4 font-robotoSlab font-extralight text-2xl tracking-wide"${startAttr}>${body}</${type}>`;
   };
 
   return renderer;
