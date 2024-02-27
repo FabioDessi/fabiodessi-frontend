@@ -1,7 +1,7 @@
 <script lang="ts">
 import { onMount } from 'svelte';
 import { fade } from 'svelte/transition';
-import ExperienceCard from '../../components/ExperienceCard/ExperienceCard.svelte';
+import ExperienceCard from './components/ExperienceCard.svelte';
 import LoadingSpinner from '../../components/LoadingSpinner/LoadingSpinner.svelte';
 import ErrorMessage from '../../components/ErrorMessage/ErrorMessage.svelte';
 
@@ -27,28 +27,21 @@ onMount(async () => {
 });
 </script>
 
-<h4 class="section-title text-l uppercase font-bold pl-40">Work Experiences</h4>
-<div class="flex-col space-y-4 items-center py-8">
-  <h1 class="text-8xl uppercase">Empowering</h1>
-  <h1 class="text-8xl uppercase text-center">web experiences</h1>
-  <h1 class="text-8xl uppercase text-right">with code</h1>
-</div>
+<section class="container mx-auto pb-[13rem]">
+  <h2 class="font-integralCF text-10xl tracking-wide">expowering</h2>
+  <h2 class="font-integralCF text-10xl tracking-wide text-red-700">web experiences</h2>
+  <h2 class="font-integralCF text-10xl tracking-wide">with code</h2>
+</section>
 
-<h4 class="section-title text-l uppercase font-bold pl-40">Introduction</h4>
-<div class="w-3/4 flex-col space-y-4 mx-auto py-8">
-  <p class="text-2xl">
-    Ut nec eros eleifend, placerat sapien consequat, dapibus arcu. Morbi in nulla eleifend, pharetra
-    libero eu, viverra lacus. Phasellus in est magna. Nunc dui leo, rhoncus quis rhoncus
-    pellentesque, sagittis ut velit. Suspendisse ultrices, augue ac convallis blandit, lectus nisl
-    interdum tortor, viverra congue turpis felis eu elit. Curabitur cursus, ligula in aliquam
-    bibendum, tortor sapien luctus elit, sed blandit nisi metus sed velit. Ut sollicitudin posuere
-    viverra. Etiam nec tortor eu ex viverra pulvinar. Vestibulum rutrum metus a magna elementum
-    laoreet. Praesent viverra sollicitudin odio, a consectetur eros. Quisque viverra pellentesque
-    velit, id congue nunc finibus ut. Nulla vestibulum fermentum leo id dictum.
-  </p>
-</div>
-
-<h4 class="section-title text-l uppercase font-bold pl-40">Experiences</h4>
+<section class="flex items-center justify-center pb-[13rem]">
+  <div class="container mx-auto px-16">
+    <p class="font-robotoSlab text-5xl font-thin tracking-wide text-center leading-[4rem]">
+      Ut nec eros eleifend, placerat sapien consequat, dapibus arcu. Morbi in nulla eleifend, pharetra
+      libero eu, viverra lacus. Phasellus in est magna. Nunc dui leo, rhoncus quis rhoncus
+      pellentesque, sagittis ut velit. Suspendisse ultrices, augue ac convallis blandit, lectus nisl
+      interdum tortor, viverra congue turpis felis eu elit.</p>
+  </div>
+</section>
 
 {#if isLoading}
   <LoadingSpinner />
@@ -63,13 +56,3 @@ onMount(async () => {
     {/each}
   </div>
 {/if}
-
-<style>
-.section-title::before,
-.section-title::after {
-  content: '•';
-  display: inline-block;
-  margin: 0 0.5rem;
-  color: #333;
-}
-</style>
