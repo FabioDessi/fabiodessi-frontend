@@ -1,44 +1,24 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import Logo from './Logo.svelte';
-	import SocialLinks from './SocialLinks.svelte';
-	import NavMenu from './NavMenu.svelte';
-	import handleResize from '../../utils/handleResize';
-	import type { ScreenSize } from '../../utils/handleResize';
+import Logo from './Logo.svelte';
+import SocialLinks from './SocialLinks.svelte';
+import NavMenu from './NavMenu.svelte';
 
-	let screenSize: ScreenSize;
-	let isHidden = true;
-
-	onMount(() => {
-		const cleanup = handleResize((size) => {
-			screenSize = size;
-		});
-
-		return cleanup;
-	});
-
-	const hideMenuOverlay = () => {
-		isHidden = true;
-	};
+export let showMenu: boolean;
 </script>
 
 <div
-	class="flex flex-col justify-between w-full h-screen bg-violet-500 absolute"
-	class:hidden={isHidden}
+  class="flex flex-col justify-between w-full h-screen bg-red-700 absolute z-10"
+  class:hidden={!showMenu}
 >
-	<div class="flex">
-		<!-- {#if screenSize === 'xs'}
-			<Logo />
-		{/if} -->
-		<div />
-		<div on:click={hideMenuOverlay}>X</div>
-	</div>
+  <div class="flex">
+    <div />
+  </div>
 
-	<div class="flex justify-between items-center">
-		<NavMenu />
-		<Logo />
-		<div>LOGO</div>
-	</div>
+  <div class="flex justify-between items-center">
+    <NavMenu />
+    <Logo />
+    <div>LOGO</div>
+  </div>
 
-	<SocialLinks />
+  <SocialLinks />
 </div>
