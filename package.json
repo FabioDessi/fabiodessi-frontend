@@ -35,7 +35,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@studio-freight/lenis": "^1.0.34",
 		"marked": "^9.1.5"
 	}
 }
