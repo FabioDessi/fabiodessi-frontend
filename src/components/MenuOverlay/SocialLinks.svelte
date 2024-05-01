@@ -1,33 +1,23 @@
 <script>
-	import { onMount } from 'svelte';
 	import Github from '../../icons/Github.svelte';
 	import Linkedin from '../../icons/Linkedin.svelte';
 	import X from '../../icons/X.svelte';
-	import gsap from 'gsap';
-
-	onMount(() => {
-		gsap.from('.social-links', {
-			duration: 2,
-			y: '100%',
-			ease: 'power2.out'
-		});
-	});
 </script>
 
 <div>
-	<ul class="social-links bg-black py-2 px-4 float-left">
-		<li class="inline-block mr-2">
-			<a href="#">
+	<ul class="social-links float-left">
+		<li class="mt-4">
+			<a href="https://github.com/FabioDessi" target="_blank">
 				<Github />
 			</a>
 		</li>
-		<li class="inline-block mr-2">
-			<a href="#">
+		<li class="mt-4">
+			<a href="https://www.linkedin.com/in/fabiodessi/" target="_blank">
 				<Linkedin />
 			</a>
 		</li>
-		<li class="inline-block mr-2">
-			<a href="#">
+		<li class="mt-4">
+			<a href="https://twitter.com/FabioDessiDev" target="_blank">
 				<X />
 			</a>
 		</li>
