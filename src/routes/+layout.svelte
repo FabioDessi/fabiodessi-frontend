@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-
 	import MenuOverlay from '../components/MenuOverlay/MenuOverlay.svelte';
 	import Header from '../components/Header/Header.svelte';
 	import Footer from '../components/Footer/Footer.svelte';
