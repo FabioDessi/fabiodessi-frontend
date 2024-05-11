@@ -1,7 +1,7 @@
 <script>
-	import Github from '../../icons/Github.svelte';
-	import Linkedin from '../../icons/Linkedin.svelte';
-	import X from '../../icons/X.svelte';
+	import Github from '$icons/Github.svelte';
+	import Linkedin from '$icons/Linkedin.svelte';
+	import X from '$icons/X.svelte';
 </script>
 
 <div>

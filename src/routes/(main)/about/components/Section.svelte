@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import gsap from 'gsap';
-	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { marked } from 'marked';
-	import { aboutIntroRenderer, aboutBlocksRenderer } from '../../../utils/markdownRenderer';
+	import { aboutIntroRenderer, aboutBlocksRenderer } from '$utils/markdownRenderer';
 
-	import type { AboutSection } from '../../../types';
+	import type { AboutSection } from '$types';
 
 	let parallaxSection: HTMLDivElement;
 	let parallaxTextFirst: HTMLDivElement;
@@ -20,7 +19,6 @@
 
 	onMount(() => {
 		// Horizontal parallax animation
-		gsap.registerPlugin(ScrollTrigger);
 		gsap.utils.toArray([parallaxTextFirst, parallaxTextsecond]).forEach((text, index) => {
 			gsap.to(text, {
 				x: () => (index === 0 ? 400 : -400),

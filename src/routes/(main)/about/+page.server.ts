@@ -1,4 +1,4 @@
-import type { AboutSection } from "../../types";
+import type { AboutSection } from "$types";
 
 /** @type {import('./$types').PageServerLoad} */
 export const prerender = true
