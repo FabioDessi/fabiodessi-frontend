@@ -8,17 +8,17 @@
 	<ul class="social-links float-left">
 		<li class="mt-4">
 			<a href="https://github.com/FabioDessi" target="_blank">
-				<Github />
+				<Github className="w-6 h-6 fill-white" />
 			</a>
 		</li>
 		<li class="mt-4">
 			<a href="https://www.linkedin.com/in/fabiodessi/" target="_blank">
-				<Linkedin />
+				<Linkedin className="w-6 h-6 fill-white" />
 			</a>
 		</li>
 		<li class="mt-4">
 			<a href="https://twitter.com/FabioDessiDev" target="_blank">
-				<X />
+				<X className="w-6 h-6 fill-white" />
 			</a>
 		</li>
 	</ul>
