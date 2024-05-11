@@ -1,9 +1,9 @@
 <script lang="ts">
-	import MenuOverlay from '../components/MenuOverlay/MenuOverlay.svelte';
-	import Header from '../components/Header/Header.svelte';
-	import Footer from '../components/Footer/Footer.svelte';
-	// import CustomCursor from '../components/CustomCursor/CustomCursor.svelte';
-	import '../app.css';
+	import MenuOverlay from '$components/MenuOverlay/MenuOverlay.svelte';
+	import Header from '$components/Header/Header.svelte';
+	import Footer from '$components/Footer/Footer.svelte';
+	// import CustomCursor from '@components/CustomCursor/CustomCursor.svelte';
+	import '$app.css';
 
 	let showMenu = false;
 
