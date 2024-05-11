@@ -1,7 +1,7 @@
 import type { AboutSection } from "$types";
 
 /** @type {import('./$types').PageServerLoad} */
-export const prerender = true
+// export const prerender = true
 
 export async function load() {
   try {
