@@ -3,50 +3,50 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: IntegralCF;
-  src: url(/fonts/IntegralCF-ExtraBold.woff2) format("woff2");
-  font-weight: 800;
-  font-display: swap
+	font-family: IntegralCF;
+	src: url(/fonts/IntegralCF-ExtraBold.woff2) format('woff2');
+	font-weight: 800;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: IntegralCF;
-  src: url(/fonts/IntegralCF-Heavy.woff2) format("woff2");
-  font-weight: 900;
-  font-display: swap
+	font-family: IntegralCF;
+	src: url(/fonts/IntegralCF-Heavy.woff2) format('woff2');
+	font-weight: 900;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: GuthenBoots;
-  src: url(/fonts/Guthen-Bloots-Basic.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap
+	font-family: GuthenBoots;
+	src: url(/fonts/Guthen-Bloots-Basic.woff2) format('woff2');
+	font-weight: 400;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: RobotoSlab;
-  src: url(/fonts/RobotoSlab-Thin.woff2) format("woff2");
-  font-weight: 100;
-  font-display: swap
+	font-family: RobotoSlab;
+	src: url(/fonts/RobotoSlab-Thin.woff2) format('woff2');
+	font-weight: 100;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: RobotoSlab;
-  src: url(/fonts/RobotoSlab-ExtraLight.woff2) format("woff2");
-  font-weight: 200;
-  font-display: swap
+	font-family: RobotoSlab;
+	src: url(/fonts/RobotoSlab-ExtraLight.woff2) format('woff2');
+	font-weight: 200;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: RobotoSlab;
-  src: url(/fonts/RobotoSlab-Light.woff2) format("woff2");
-  font-weight: 300;
-  font-display: swap
+	font-family: RobotoSlab;
+	src: url(/fonts/RobotoSlab-Light.woff2) format('woff2');
+	font-weight: 300;
+	font-display: swap;
 }
 
 @font-face {
-  font-family: RobotoSlab;
-  src: url(/fonts/RobotoSlab-Regular.woff2) format("woff2");
-  font-weight: 400;
-  font-display: swap
+	font-family: RobotoSlab;
+	src: url(/fonts/RobotoSlab-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-display: swap;
 }
