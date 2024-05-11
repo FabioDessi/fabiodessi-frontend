@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { fade } from 'svelte/transition';
 	import Section from './components/Section.svelte';
+
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -25,12 +25,12 @@
 	</div>
 </section>
 
-{#if aboutSectionsList.length === 0}
-	<span>no data</span>
-{:else}
-	<div transition:fade>
+{#if aboutSectionsList?.length !== 0}
+	<div>
 		{#each aboutSectionsList as section}
 			<Section {section} />
 		{/each}
 	</div>
+{:else}
+	<p class="text-center text-xl">No about section to show.</p>
 {/if}
