@@ -67,7 +67,7 @@
 			<a
 				class="bg-red-700 py-2 px-8 text-white uppercase rounded-full font-integralCF font-extralight text-base tracking-wide"
 				data-sveltekit-preload-data="tap"
-				href="/work-experiences"
+				href="/work"
 			>
 				My work experiences
 			</a>

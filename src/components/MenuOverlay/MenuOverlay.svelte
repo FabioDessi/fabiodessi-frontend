@@ -2,7 +2,7 @@
 	import Contact from './Contact.svelte';
 	import SocialLinks from './SocialLinks.svelte';
 	import NavMenu from './NavMenu.svelte';
-	import LanguageSelector from './LanguageSelector.svelte';
+	// import LanguageSelector from './LanguageSelector.svelte';
 
 	export let showMenu: boolean;
 </script>
@@ -21,6 +21,6 @@
 	</div>
 	<div class="flex flex-wrap justify-between items-end">
 		<SocialLinks />
-		<LanguageSelector />
+		<!-- <LanguageSelector /> -->
 	</div>
 </div>

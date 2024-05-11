@@ -1,30 +1,11 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import { fade } from 'svelte/transition';
 	import ExperienceCard from './components/ExperienceCard.svelte';
-	import LoadingSpinner from '$components/LoadingSpinner/LoadingSpinner.svelte';
-	import ErrorMessage from '$components/ErrorMessage/ErrorMessage.svelte';
 
-	import type { WorkExperience } from '$types';
+	import type { PageData } from './$types';
 
-	let workExperiencesList: WorkExperience[] = [];
-	let isLoading = true;
-	let error: string | null = null;
+	export let data: PageData;
 
-	onMount(async () => {
-		try {
-			const response = await fetch('http://localhost:3000/api/work-experiences');
-			if (!response.ok) {
-				throw new Error('Failed to fetch');
-			}
-			const jsonResponse = await response.json();
-			workExperiencesList = jsonResponse.data;
-		} catch (e) {
-			error = e instanceof Error ? e.message : 'An unexpected error occurred';
-		} finally {
-			isLoading = false;
-		}
-	});
+	const { workExperiencesList } = data;
 </script>
 
 <section class="container mx-auto pb-[13rem]">
@@ -44,16 +25,12 @@
 	</div>
 </section>
 
-{#if isLoading}
-	<LoadingSpinner />
-{:else if error}
-	<ErrorMessage message={error} />
-{:else if workExperiencesList.length === 0}
-	<p class="text-center text-xl">No work experiences to show.</p>
-{:else}
-	<div transition:fade>
+{#if workExperiencesList?.length !== 0}
+	<div>
 		{#each workExperiencesList as workExperience}
 			<ExperienceCard {workExperience} />
 		{/each}
 	</div>
+{:else}
+	<p class="text-center text-xl">No work experiences to show.</p>
 {/if}
