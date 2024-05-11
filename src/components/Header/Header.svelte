@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BurgerMenu from '../../icons/BurgerMenu.svelte';
+	import BurgerMenu from '$icons/BurgerMenu.svelte';
 
 	export let showMenu: boolean;
 	export let toggleMenuOverlay: () => void;
