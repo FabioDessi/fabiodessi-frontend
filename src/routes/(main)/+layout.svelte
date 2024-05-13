@@ -1,5 +1,6 @@
 <script lang="ts">
 	import MenuOverlay from '$components/MenuOverlay/MenuOverlay.svelte';
+	import Analytics from '$lib/analytics.svelte';
 	import Header from '$components/Header/Header.svelte';
 	import Footer from '$components/Footer/Footer.svelte';
 	// import CustomCursor from '@components/CustomCursor/CustomCursor.svelte';
@@ -15,6 +16,7 @@
 </script>
 
 <div class="w-full">
+	<Analytics />
 	<MenuOverlay {showMenu} />
 	<!-- <CustomCursor /> -->
 	<Header {toggleMenuOverlay} {showMenu} />
